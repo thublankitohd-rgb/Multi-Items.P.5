@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    color: #343A40;
+    margin: 0;
+    padding-top: 70px;
+}
+
+/* Hero con la imagen original de fondo y filtro oscuro */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-delgado {
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px;
+    transition: all 0.2s ease;
+}
+
+.btn-delgado:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Tarjeta de producto con sombra de realce en tono marrón cálido al pasar el cursor */
+.product-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    /* Sombra con tono marrón cálido (rgba de un marrón oscuro/café) y un brillo difuminado */
+    box-shadow: 0 1rem 2rem rgba(92, 58, 33, 0.25);
+    border-color: #8c5836;
+}
+
+.product-img-box {
+    height: 180px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.product-img-box img {
+    max-height: 100%;
+    object-fit: contain;
+}
